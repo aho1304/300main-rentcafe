@@ -1,5 +1,5 @@
 <style>
-    .margin-announce.px-lg-5.bg-primary.ysi-row.d-none.d-xl-flex.sticky-top.left-0.right-0 {
+    .margin-announce.px-lg-5.bg-primary.ysi-row.d-none.d-xl-flex.sticky-top.left-0.right-0, .text-uppercase.page-heading.mobile {
         display: none !important;
     }
 
@@ -314,6 +314,9 @@
     </svg>
 </div>
 <script>
+    var nav = document.querySelector('.test-header');
+    nav.innerHTML = "";
+    nav.classList.remove('cus');
     document.addEventListener("scroll", () => {
         var bodyScroll = window.scrollY,
             navbar = document.querySelector('.navbar.change'),
