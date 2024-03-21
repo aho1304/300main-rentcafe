@@ -1,0 +1,730 @@
+#floorplan-gallery .p1,
+#floorplan-gallery .p2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute
+}
+
+#apply-form,
+#apply-form .info-box {
+    padding: 0 !important
+}
+
+#floorplan-gallery a {
+    text-decoration: none;
+    color: inherit
+}
+
+#floorplan-gallery a.tab-button {
+    margin: 10px 0
+}
+
+#floorplan-gallery .right-vertical {
+    transform: rotate(90deg);
+    position: absolute
+}
+
+#floorplan-gallery #row1 .right-vertical p,
+#floorplan-gallery .right-vertical p {
+    text-transform: uppercase;
+    font-family: Syncopate;
+    color: #144d59;
+    letter-spacing: 2px;
+}
+
+#floorplan-gallery #row1 {
+    height: 30px
+}
+
+#floorplan-gallery #row1 .right-vertical {
+    left: -75px;
+    top: 298px
+}
+
+#floorplan-gallery .apt-info {
+    width: 100%
+}
+
+#floorplan-gallery .apt-info .child-tab {
+    margin-top: 220px;
+    margin-left: 100px;
+    margin-bottom: 120px;
+    display: none
+}
+
+#floorplan-gallery .apt-info .child-tab h6 {
+    text-transform: uppercase;
+    font-family: Syncopate;
+    font-size: 28px;
+    font-weight: 700;
+    color: #633b50
+}
+
+#floorplan-gallery .apt-info .child-tab p {
+    color: #633b50;
+    font-size: 14px !important;
+    font-weight: 500
+}
+
+#floorplan-gallery .apt-info .child-tab .apply {
+    background-color: #ae9679;
+    color: #fff;
+    font-size: 25px;
+    width: 80%;
+    padding: 13px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    border: 1px solid #ae9679;
+    font-weight: 500;
+    text-align: center
+}
+
+#floorplan-gallery .apt-info .child-tab .apply.view {
+    background: 0 0;
+    border: 1px solid #ae9679;
+    color: #ae9679
+}
+
+#floorplan-gallery .apt-info .floors {
+    margin-top: 80px;
+    margin-left: 100px;
+    border-top: 1px solid #ae9679;
+    width: 80%
+}
+
+#floorplan-gallery .apt-info .floors h6 {
+    color: #ae9679;
+    margin-top: 20px
+}
+
+#floorplan-gallery .apt-info .floors .tab-button.floor_num {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ae9679;
+    text-align: center;
+    opacity: 1
+}
+
+#floorplan-gallery .apt-info .floors .tab-button.floor_num p {
+    color: #ae9679;
+    font-weight: 700;
+    font-size: 18px !important
+}
+
+#floorplan-gallery .apt-info .floors .tab-button#active {
+    background-color: #ae9679
+}
+
+#floorplan-gallery .apt-info .floors .tab-button#active p {
+    color: #fff
+}
+
+#floorplan-gallery .back {
+    font-size: 18px;
+    color: #ae9679;
+    position: absolute;
+    left: 115px;
+    top: 80px;
+    margin-left: 15px;
+    transition: 1s
+}
+
+#floorplan-gallery .back:hover {
+    margin-left: 0
+}
+
+#floorplan-gallery .p1 {
+    right: 15px;
+    top: 80px;
+    width: 300px;
+    height: 400px
+}
+
+#floorplan-gallery .p2 {
+    top: 150px;
+    left: 20%;
+    width: 350px;
+    height: 550px
+}
+
+#floorplan-gallery .p5,
+#floorplan-gallery .p6 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 350px
+}
+
+#floorplan-gallery .p3 {
+    width: 100%;
+    height: 450px;
+    margin-top: 250px
+}
+
+#floorplan-gallery .p3 iframe {
+    width: 100% !important;
+    height: 100% !important
+}
+
+#floorplan-gallery .row2 .right-vertical {
+    top: 65px;
+    right: -87px
+}
+
+#floorplan-gallery .row2 .right-vertical p {
+    font-size: 24px !important;
+    letter-spacing: 10px
+}
+
+#floorplan-gallery .row2 .child-tab {
+    display: none
+}
+
+#floorplan-gallery .row2 .child-tab .popup-floorplan {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 250px;
+    cursor: pointer
+}
+
+#floorplan-gallery .row2 .child-tab p {
+    position: absolute;
+    bottom: 0;
+    color: #888
+}
+
+#floorplan-gallery .row2 .child-tab p .price {
+    font-size: 50px;
+    font-family: Elephant
+}
+
+#floorplan-gallery .row2 .child-tab:first-child {
+    display: block
+}
+
+#floorplan-gallery .row3 .right-vertical {
+    right: -105px;
+    bottom: 1100px
+}
+
+#floorplan-gallery .background-content {
+    background-color: rgba(180, 180, 181, .7);
+    width: 330px;
+    height: 800px;
+    margin-top: 200px;
+    margin-left: 100px;
+    position: relative
+}
+
+#floorplan-gallery .background-content p {
+    position: absolute;
+    bottom: 0;
+    padding: 55px;
+    margin-bottom: 50px;
+    font-size: 14px !important
+}
+
+#floorplan-gallery .background-content:before {
+    content: "";
+    background-color: #b4b4b5;
+    opacity: .3;
+    width: 100px;
+    height: 800px;
+    position: absolute;
+    left: -100px
+}
+
+#floorplan-gallery .p4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 590px;
+    height: 250px;
+    margin-top: 100px;
+    margin-left: 340px
+}
+
+#floorplan-gallery .p5 {
+    width: 270px;
+    height: 550px;
+    position: absolute;
+    left: 85px
+}
+
+#floorplan-gallery #float-text {
+    position: absolute;
+    top: 400px;
+    width: 200px;
+    right: 420px;
+    margin-top: 200px
+}
+
+#floorplan-gallery #float-text p {
+    text-align: right;
+    font-size: 12px !important;
+    color: #144d59
+}
+
+#floorplan-gallery .p6 {
+    width: 400px;
+    height: 600px;
+    margin-top: 200px;
+    position: absolute;
+    right: 0
+}
+
+#floorplan-gallery .p11,
+#floorplan-gallery .row4 .p7 {
+    background-position: center;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+#floorplan-gallery .row4 {
+    height: 1450px
+}
+
+#floorplan-gallery .row4 .p7 {
+    height: 1000px;
+    margin-top: 100px
+}
+
+#floorplan-gallery .row4 .p7 .row2 .right-vertical {
+    top: 260px
+}
+
+#floorplan-gallery .row4 .p7 .row3 .right-vertical {
+    bottom: 470px;
+    right: -70px
+}
+
+#floorplan-gallery .row4 .p7 .middle-box {
+    margin: 170px auto 0;
+    width: 600px
+}
+
+#floorplan-gallery .row4 .p7 .middle-box .p8 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1000px
+}
+
+#floorplan-gallery .row4 .p7 .middle-box p {
+    width: 400px
+}
+
+#floorplan-gallery .row5 {
+    margin-bottom: 50px
+}
+
+#floorplan-gallery .row5 .p9 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 380px;
+    height: 300px
+}
+
+#floorplan-gallery .row5 .p10 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 350px;
+    height: 230px;
+    margin: 0 380px
+}
+
+#floorplan-gallery .p11 {
+    height: 100vh
+}
+
+#apply-form {
+    background-color: #fff;
+    max-width: 900px;
+    max-height: 700px !important;
+    margin: auto
+}
+
+#apply-form .flex-box {
+    display: flex
+}
+
+#apply-form .flex-box .apply_cover {
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90vh;
+    height: inherit
+}
+
+#apply-form .info-box h1 {
+    font-weight: 100;
+    padding: 2% 0 0;
+    font-size: 50px
+}
+
+#apply-form .info-box input {
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 3% auto;
+    font-size: 16px;
+    width: 85%
+}
+
+#apply-form .info-box ._form_47 label._form-label {
+    display: none !important
+}
+
+#apply-form .info-box ._form_47 ._field4 label._form-label {
+    display: block !important
+}
+
+#apply-form .info-box input:-ms-input-placeholder,
+#apply-form .info-box input::-ms-input-placeholder,
+#apply-form .info-box input::placeholder {
+    color: #707070;
+    opacity: .7
+}
+
+#apply-form .info-box #_form_47_submit {
+    background-color: #ae9679 !important;
+    color: #fff;
+    margin: 3% 0
+}
+
+@media screen and (max-width: 1199px){
+    #floorplan-gallery .p2{
+        left: 0;
+    }
+}
+
+@media screen and (max-width:991px) {
+    button.navbar-toggler.dark .fa-bars:before {
+        color: #000;
+        font-size: 1.25rem
+    }
+    button.navbar-toggler.light .fa-bars:before {
+        color: #fff;
+        font-size: 1.25rem
+    }
+    button.navbar-toggler.light .fa-times:before {
+        color: #fff
+    }
+    .nav-scroll {
+        button.navbar-toggler .fa-times:before,
+        button.navbar-toggler .fa-bars:before {
+            color: #000;
+        }
+    }
+    #floorplan-gallery .apt-info .child-tab {
+        width: 200px;
+        margin: 200px auto 140px
+    }
+    #floorplan-gallery .apt-info .child-tab .apply {
+        width: 100%;
+        padding: 11px;
+        font-size: 22px
+    }
+    #floorplan-gallery .apt-info .floors {
+        width: 250px;
+        margin: 60px auto 0
+    }
+    #floorplan-gallery .back {
+        top: 0;
+        left: 0;
+        padding-top: 10px
+    }
+    #floorplan-gallery .p1 {
+        right: 0;
+        height: 350px;
+        width: 250px
+    }
+    #floorplan-gallery .p2 {
+        left: 0;
+        height: 430px;
+        width: 270px
+    }
+    #floorplan-gallery .p3 {
+        margin-top: 50px;
+        height: 300px
+    }
+    #floorplan-gallery .row2 .right-vertical {
+        top: -55px;
+        right: -77px
+    }
+    #floorplan-gallery .row2 .right-vertical p {
+        font-size: 20px !important;
+    }
+    #floorplan-gallery .row2 .child-tab p .price {
+        font-size: 38px
+    }
+    #floorplan-gallery .row2 .child-tab .popup-floorplan {
+        top: 50px
+    }
+    #floorplan-gallery .p4 {
+        width: 400px;
+        height: 170px;
+        margin-left: 220px
+    }
+    #floorplan-gallery .row3 .right-vertical {
+        right: -48px;
+        bottom: unset;
+        top: 190px
+    }
+    #floorplan-gallery .row3 .right-vertical p,
+    #floorplan-gallery .row4 .p7 .middle-box p {
+        font-size: 12px !important;
+    }
+    #floorplan-gallery .background-content {
+        width: 220px;
+        height: 500px;
+        margin-top: 50px;
+        margin-left: 50px
+    }
+    #floorplan-gallery .background-content::before {
+        width: 50px;
+        height: 500px;
+        left: -50px
+    }
+    #floorplan-gallery .background-content p {
+        padding: 15px;
+        font-size: 12px !important
+    }
+    #floorplan-gallery .p5 {
+        width: 200px;
+        height: 300px;
+        top: 270px;
+        left: 35px
+    }
+    #floorplan-gallery #float-text {
+        top: 340px;
+        width: 130px;
+        right: 225px;
+        margin-top: 0
+    }
+    #floorplan-gallery #float-text p {
+        font-size: 11px !important
+    }
+    #floorplan-gallery .p6 {
+        width: 220px;
+        height: 320px;
+        margin-top: 320px;
+        top: 0
+    }
+    #floorplan-gallery .row4 {
+        height: 1000px
+    }
+    #floorplan-gallery .row4 .p7,
+    #floorplan-gallery .row4 .p7 .middle-box .p8 {
+        height: 700px
+    }
+    #floorplan-gallery .row4 .p7 .row3 .right-vertical {
+        right: -68px;
+        top: 585px
+    }
+    #floorplan-gallery .row4 .p7 .middle-box {
+        width: 400px
+    }
+    #floorplan-gallery .row5 .p9 {
+        width: 350px;
+        height: 250px;
+        margin-left: 30px
+    }
+    #floorplan-gallery .row5 .p10 {
+        width: 300px;
+        height: 200px
+    }
+}
+
+@media screen and (max-width:767px) {
+    #floorplan-gallery .col-12,
+    #floorplan-gallery .col-md-9,
+    #floorplan-gallery .col-sm-12 {
+        padding: 0
+    }
+    #floorplan-gallery #row1 .right-vertical {
+        z-index: 600;
+        top: 345px
+    }
+    #floorplan-gallery .apt-info .child-tab {
+        margin: 0 0 20px;
+        text-align: left;
+        padding-left: 10px;
+        padding-top: 40px
+    }
+    #floorplan-gallery .apt-info .child-tab #title {
+        margin: 5px 0 10px
+    }
+    #floorplan-gallery .apt-info .floors {
+        margin: 20px 0;
+        border: none;
+        display: flex;
+        width: 100%;
+        padding: 0 12px 0 10px
+    }
+    #floorplan-gallery .apt-info .floors h6 {
+        flex: 1.5
+    }
+    #floorplan-gallery .apt-info .floors .add_style {
+        flex: 2;
+        display: flex;
+        justify-content: space-between
+    }
+    #floorplan-gallery .apt-info .floors .tab-button.floor_num {
+        margin-bottom: 30px
+    }
+    #floorplan-gallery .apt-info .p2 {
+        width: 100%;
+        position: static;
+        background-position: center;
+    }
+    #floorplan-gallery .apply {
+        background-color: #ae9679;
+        color: #fff;
+        font-size: 25px;
+        width: 70%;
+        padding: 13px;
+        text-transform: uppercase;
+        border: 1px solid #ae9679;
+        font-weight: 500;
+        text-align: center;
+        margin: 0 auto 20px
+    }
+    #floorplan-gallery .p3 {
+        width: 100%
+    }
+    #floorplan-gallery .row2 {
+        margin: 0 auto;
+        text-align: center
+    }
+    #floorplan-gallery .row2 .child-tab {
+        margin-bottom: 50px
+    }
+    #floorplan-gallery .apt-info .popup-floorplan {
+        position:absolute;
+        top: -80px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    #floorplan-gallery .row2 .child-tab p {
+        position: relative
+    }
+    #floorplan-gallery .row2 .child-tab p .price {
+        font-size: 60px;
+        line-height: 1
+    }
+    #floorplan-gallery .row2 .right-vertical {
+        z-index: 6
+    }
+    #floorplan-gallery .p4 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0
+    }
+    #floorplan-gallery .row3 .right-vertical {
+        top: 250px
+    }
+    #floorplan-gallery .mobile .background-content {
+        width: 90%;
+        margin: 200px 0 0 10%;
+        height: 800px
+    }
+    #floorplan-gallery .mobile .background-content p {
+        padding: 25px;
+        font-size: 14px !important;
+        margin-bottom: 90px
+    }
+    #floorplan-gallery .mobile .background-content::before {
+        content: none
+    }
+    #floorplan-gallery .p5 {
+        width: 80%;
+        height: 550px;
+        left: 0;
+        margin-left: 10px
+    }
+    #floorplan-gallery .p6 {
+        position: relative;
+        margin: 50px 0 10px;
+        width: 95%;
+        height: 600px
+    }
+    #floorplan-gallery #float-text {
+        width: 65%;
+        position: relative;
+        top: unset;
+        left: 0;
+        margin: 0 auto
+    }
+    #floorplan-gallery #float-text p {
+        text-align: center;
+        font-size: 12px !important
+    }
+    #floorplan-gallery .row4 {
+        height: 770px
+    }
+    #floorplan-gallery .row4 .p7,
+    #floorplan-gallery .row4 .p7 .middle-box .p8 {
+        height: 520px
+    }
+    #floorplan-gallery .row4 .p7 .row2 .right-vertical {
+        top: 240px;
+        right: -72px
+    }
+    #floorplan-gallery .row4 .p7 .row3 .right-vertical {
+        top: 545px;
+        right: -58px
+    }
+    #floorplan-gallery .row4 .p7 .middle-box {
+        width: 80%;
+        margin: 100px auto 0
+    }
+    #floorplan-gallery .row4 .p7 .middle-box p {
+        width: 65%;
+        margin: 0 auto;
+        text-align: center
+    }
+    #floorplan-gallery .row5 .p9 {
+        width: 95%;
+        height: 270px;
+        margin-left: 0
+    }
+    #floorplan-gallery .row5 .p10 {
+        width: 95%;
+        height: 230px;
+        margin: 0 0 80px 5%
+    }
+    #floorplan-gallery .p11 {
+        height: 450px;
+        background-position: bottom
+    }
+    #apply-form .flex-box {
+        display: block
+    }
+    #apply-form .flex-box .apply_cover {
+        flex: 0;
+        height: 150px;
+        display: block;
+        background-position: -80px 54%
+    }
+    #apply-form .info-box {
+        flex: 0;
+        text-align: center
+    }
+    #apply-form .info-box h1 {
+        font-size: 28px
+    }
+    #apply-form .info-box input {
+        padding: 5px;
+        font-size: 11px
+    }
+    #apply-form .info-box input:-ms-input-placeholder,
+    #apply-form .info-box input::-ms-input-placeholder,
+    #apply-form .info-box input::placeholder {
+        color: #707070;
+        opacity: .7
+    }
+    #apply-form .info-box #_form_47_submit {
+        margin: 3% 0
+    }
+}

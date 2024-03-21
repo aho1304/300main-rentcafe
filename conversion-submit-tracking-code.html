@@ -1,0 +1,50 @@
+<!-- Event snippet for 300Main - Submit Interested Form conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof (url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-998138237/X7WHCP2Tlv8CEP3C-dsD',
+      'event_callback': callback
+    });
+    return false;
+  }
+
+  var submit_btn = document.querySelectorAll('.submit-button');
+
+  for (let j = 0; j < submit_btn.length; j++) {
+    document.querySelectorAll('.submit-button')[j].addEventListener("click", function () {
+      gtag_report_conversion(window.location);
+    })
+  }
+</script>
+
+
+<!-- Event snippet for Track Form Submission conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof (url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-792381510/pKeACKyM5fwYEMaQ6_kC',
+      'event_callback': callback
+    });
+    return false;
+  }
+
+
+  document.addEventListener("click", function (e) {
+    var element = e.target;
+    if (element.classList.contains("submit-button")) {
+      gtag_report_conversion();
+    }
+  })
+</script>

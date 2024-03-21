@@ -1,0 +1,22 @@
+<button id="track" hidden style="color: transparent; background: transparent; border: none; outline: none;" onclick="sendTracking()">
+    Tracking Button
+</button>
+
+<script>
+    var submit_btn = document.querySelector(".submit-button");
+    
+    submit_btn.addEventListener("click", () => {
+        sendTracking();
+    }, false)
+
+    function sendTracking(){
+        console.log("Submit Inquiries");
+        gtag('event', 'submit_inquiries', {
+            'page_name': 'leasing_landing',
+        })
+
+        //document.querySelector("#btnsave").click();
+        
+        //document.querySelector(".submit-button").click();
+    }
+</script>
