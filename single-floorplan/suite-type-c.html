@@ -1,0 +1,576 @@
+<!-- Custom Nav and header img -->
+<!-- Notes
+  Edit the outer row (any of the outer "Row" that's wrapping this block of code) stretch properties to "No Padding"
+ -->
+<style>
+    .margin-announce.px-lg-5.bg-primary.ysi-row.d-none.d-xl-flex.sticky-top.left-0.right-0,
+    .text-uppercase.page-heading.mobile {
+        display: none !important;
+    }
+
+    .newsletter-landing-cus.px-xl-5.py-lg-4.bg-white.container-fluid.p-0 .px-0.justify-content-end.align-items-center.flex-row.d-none.d-xl-flex.text-center.col-12.col-xl-6.col-lg-12 {
+        padding-top: 20px;
+    }
+
+    .newsletter-landing-cus.px-xl-5.py-lg-4.bg-white.container-fluid.p-0 {
+        display: none;
+    }
+
+    @media (max-width: 1199px) {
+        .newsletter-landing-cus.px-xl-5.py-lg-4.bg-white.container-fluid.p-0 {
+            padding: 0 !important;
+        }
+    }
+
+    #innerpage main>.add-pad {
+        padding-top: 43px !important;
+    }
+
+    #innerpage main>.no-pad {
+        padding-top: 0 !important;
+    }
+
+    .cus_nav .pages-header {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        height: 40vh;
+        background-attachment: unset !important;
+    }
+
+    .cus_nav .pages-header h1 {
+        color: #fff;
+        font-weight: 600;
+        text-transform: capitalize;
+        font-size: 55px;
+    }
+
+    .cus_nav .pages-header:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: #02050b;
+        opacity: 0.5;
+    }
+
+    .cus_nav .valign {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .cus_nav .navbar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        background: transparent;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 999;
+        min-height: 80px;
+    }
+
+    .cus_nav .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .cus_nav .navbar .navbar-nav .nav-link {
+        font-size: 13px;
+        font-weight: 400;
+        color: #000;
+        letter-spacing: 1px;
+        padding: 15px 7px;
+        margin: 10px;
+    }
+
+    .cus_nav .navbar .navbar-nav .nav-item.newsletter a.nav-link {
+        display: inline-block;
+        background-color: #369;
+        color: #000;
+        padding: 10px 15px;
+        margin-top: 15px;
+    }
+
+    .cus_nav .login_btn {
+        background-color: #0f1f35;
+        border: none;
+        padding: 5px 10px;
+        color: #fff !important;
+    }
+
+    .cus_nav .login_btn a {
+        text-transform: uppercase;
+        padding: 0 0.5rem;
+        color: transparent;
+        background: linear-gradient(90deg, #9d8057 50%, #fff 0) var(--_p, 100%)/200% no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        transition: 0.4s;
+        font-weight: 600;
+    }
+
+    .cus_nav .login_btn a:hover {
+        --_p: 0%;
+    }
+
+    .cus_nav nav.navbar a.logo svg {
+        width: 100px;
+        height: 40px;
+    }
+
+    .cus_nav nav.navbar a.logo.wht svg {
+        fill: #fff;
+    }
+
+    .cus_nav nav.navbar a.logo.blk svg {
+        fill: #000;
+    }
+
+    .cus_nav nav.navbar .nav-item .tour {
+        background-color: #986B33;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 15px 14px;
+        justify-content: center;
+    }
+
+    .cus_nav .navbar.nav-scroll .nav-item .nav-link.tour {
+        color: #fff;
+    }
+
+    .cus_nav nav.navbar .nav-item .tour svg {
+        fill: #fff;
+        width: 15px;
+        height: 17.14px;
+        margin-right: 8px;
+    }
+</style>
+<!-- ==================== Start Navbar ==================== -->
+<div class="cus_nav">
+    <nav class="navbar change navbar-expand-lg ">
+
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="logo blk" href="/">
+                <svg>
+                    <use xlink:href="#logo300main"></use>
+                </svg>
+            </a>
+
+            <button class="navbar-toggler collapsed dark" onclick="toggleAnnounce()" type="button"
+                data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"><i class="fas fa-bars"></i></span>
+                <span class="icon-bar"><i class="fas fa-times"></i></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/apartments">Apartments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/amenities-and-services">Amenities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://livingat300main.ca/" target="_blank">Living</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/inquiries">Inquiries</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Calendly link widget begin -->
+                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                            async></script>
+                        <a class="nav-link tour" href=""
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/300-main/property-tour-at-300-main'});return false;"><svg>
+                                <use xlink:href="#calendar"></use>
+                            </svg> Book A Tour</a>
+                        <!-- Calendly link widget end -->
+                    </li>
+                    <li class="nav-item">
+                        <span class="login_btn nav-link"><a
+                                href="https://300main.securecafe.com/residentservices/300-main-street0/userlogin.aspx"
+                                target="_blank">Residents</a> |
+                            <a href="https://300main.securecafe.com/onlineleasing/300-main-street0/guestlogin.aspx"
+                                target="_blank">Applicants</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- ==================== End Navbar ==================== -->
+
+    <svg aria-hidden="true" style="display: none">
+        <symbol id="logo300main" viewBox="0 0 371.52 146.88">
+            <path d="M115.62,41.76c7.78,0,13.94,2.01,18.47,6.03s6.8,9.46,6.8,16.32c0,9.23-4.63,16.16-13.88,20.81
+              c-9.25,4.65-19.62,6.98-31.11,6.98c-7.78,0-14.81-2.01-21.08-6.02c-6.27-4.01-9.41-9.01-9.41-14.99c0-4.48,1.47-8.22,4.42-11.21
+              c2.95-2.99,6.57-4.48,10.88-4.48c4.53,0,8.22,1.24,11.05,3.72c2.83,2.48,4.25,5.72,4.25,9.73c0,2.91-0.55,5.13-1.64,6.67
+              c-1.1,1.53-2.53,3.11-4.31,4.72c-1.78,1.61-2.85,2.65-3.23,3.13c-0.38,0.47-0.57,1.22-0.57,2.24c0,1.42,1.06,2.54,3.17,3.36
+              c2.11,0.83,4.65,1.24,7.59,1.24c5.44,0,9.54-2.08,12.29-6.25c2.76-4.17,4.14-9.71,4.14-16.64c0-6.14-1.49-11.58-4.48-16.34
+              c-2.98-4.76-7.04-7.14-12.18-7.14c-1.81,0-3.51,0.24-5.1,0.71c-1.44,0.55-2.83,1.1-4.19,1.65c-0.38,0-0.78-0.18-1.19-0.53
+              c-0.42-0.35-0.62-0.77-0.62-1.24c0-0.94,0.81-1.57,2.44-1.89c1.62-0.31,3.49-0.47,5.61-0.47c5.21,0,9.25-1.57,12.12-4.72
+              c2.87-3.15,4.31-7.59,4.31-13.33c0-5.03-1-9.3-3-12.8c-2-3.5-5.27-5.25-9.8-5.25c-2.65,0-5.16,0.53-7.54,1.59
+              c-2.38,1.06-3.57,2.53-3.57,4.41c0,1.02,0.3,1.88,0.91,2.59c0.6,0.71,1.79,1.22,3.57,1.53c1.77,0.31,3.3,1.24,4.59,2.76
+              c1.28,1.53,1.93,3.47,1.93,5.82c0,3.37-1.23,5.96-3.68,7.76c-2.46,1.8-5.65,2.7-9.58,2.7c-3.7,0-6.72-1.14-9.07-3.41
+              c-2.34-2.27-3.51-5.22-3.51-8.82c0-3.53,1.85-6.96,5.55-10.29c3.7-3.33,7.97-5.7,12.8-7.12c4.83-1.41,9.71-2.12,14.62-2.12
+              c9.67,0,17.43,1.61,23.29,4.82c5.85,3.22,8.78,8.31,8.78,15.29c0,5.25-2.02,9.35-6.06,12.29c-4.04,2.94-8.97,4.68-14.79,5.23
+              V41.76z"></path>
+            <path d="M225.64,47.54c0,11.41-3.63,21.65-10.88,30.74c-7.25,9.08-16.58,13.63-27.99,13.63
+              c-12.01,0-21.49-4.72-28.44-14.16c-6.95-9.44-10.42-19.51-10.42-30.21c0-11.4,3.74-21.65,11.22-30.74
+              c7.48-9.09,16.69-13.63,27.65-13.63c11.33,0,20.64,4.62,27.93,13.86C222,26.28,225.64,36.45,225.64,47.54z M197.43,47.54
+              c0-6.53-0.11-12.11-0.34-16.76c-0.23-4.64-0.66-9.14-1.3-13.51c-0.64-4.37-1.62-7.43-2.95-9.2c-1.32-1.77-3.34-2.65-6.06-2.65
+              c-2.49,0-4.48,0.93-5.95,2.77c-1.47,1.85-2.48,4.66-3,8.44c-0.53,3.78-0.95,8.5-1.25,14.16c-0.3,5.66-0.45,11.25-0.45,16.76
+              c0,6.06,0.13,11.54,0.4,16.46c0.26,4.92,0.7,9.54,1.3,13.86c0.6,4.33,1.57,7.37,2.89,9.14c1.32,1.77,3.34,2.65,6.06,2.65
+              c2.49,0,4.48-0.92,5.95-2.77c1.47-1.85,2.45-4.64,2.95-8.38c0.49-3.74,0.91-8.57,1.25-14.51
+              C197.26,58.06,197.43,52.57,197.43,47.54z"></path>
+            <path d="M310.74,47.54c0,11.41-3.63,21.65-10.88,30.74c-7.25,9.08-16.58,13.63-27.99,13.63
+              c-12.01,0-21.49-4.72-28.44-14.16c-6.95-9.44-10.43-19.51-10.43-30.21c0-11.4,3.74-21.65,11.22-30.74
+              c7.48-9.09,16.69-13.63,27.65-13.63c11.33,0,20.64,4.62,27.93,13.86C307.1,26.28,310.74,36.45,310.74,47.54z M282.53,47.54
+              c0-6.53-0.11-12.11-0.34-16.76c-0.23-4.64-0.66-9.14-1.3-13.51c-0.64-4.37-1.62-7.43-2.95-9.2c-1.32-1.77-3.34-2.65-6.06-2.65
+              c-2.49,0-4.48,0.93-5.95,2.77c-1.47,1.85-2.48,4.66-3,8.44c-0.53,3.78-0.95,8.5-1.25,14.16c-0.3,5.66-0.45,11.25-0.45,16.76
+              c0,6.06,0.13,11.54,0.4,16.46c0.26,4.92,0.7,9.54,1.3,13.86c0.6,4.33,1.57,7.37,2.89,9.14c1.32,1.77,3.34,2.65,6.06,2.65
+              c2.49,0,4.48-0.92,5.95-2.77c1.47-1.85,2.45-4.64,2.95-8.38c0.49-3.74,0.91-8.57,1.25-14.51
+              C282.36,58.06,282.53,52.57,282.53,47.54z"></path>
+            <path d="M11.53,128.19H5v-2.06h15.31v2.06h-6.52v15.3h-2.27V128.19z"></path>
+            <path d="M26.78,126.13h2.27v9.43H39.7v-9.43h2.27v17.36H39.7v-5.87H29.05v5.87h-2.27V126.13z"></path>
+            <path d="M65.06,131.47c0,2.58-1.19,4.35-3.56,5.33l3.3,6.68h-2.64l-2.98-6.04c-0.81,0.12-1.65,0.18-2.54,0.18h-4.51
+              v5.86h-2.27v-17.36h7.12c2.57,0,4.48,0.35,5.75,1.05C64.28,128.03,65.06,129.46,65.06,131.47z M56.95,135.57
+              c1.83,0,3.19-0.25,4.07-0.76c1.09-0.63,1.63-1.69,1.63-3.19c0-1.94-1.26-3.05-3.78-3.31c-0.73-0.08-1.48-0.12-2.24-0.12h-4.5v7.38
+              H56.95z"></path>
+            <path d="M72.26,126.13h12.96v2.06H74.53v4.68h9.52v2.06h-9.52v6.5h10.93v2.06h-13.2V126.13z"></path>
+            <path d="M92.44,126.13h12.96v2.06H94.71v4.68h9.52v2.06h-9.52v6.5h10.93v2.06h-13.2V126.13z"></path>
+            <path d="M123.17,126.13h2.27v9.43h10.65v-9.43h2.27v17.36h-2.27v-5.87h-10.65v5.87h-2.27V126.13z"></path>
+            <path d="M145.88,126.13h2.27v8.99c0,3.15,1.05,5.19,3.15,6.12c0.72,0.31,1.57,0.47,2.55,0.47
+              c0.98,0,1.82-0.14,2.51-0.43c0.69-0.29,1.26-0.7,1.71-1.24c0.87-1.04,1.31-2.55,1.31-4.55v-9.35h2.27v8.99
+              c0,4.16-1.5,6.84-4.5,8.03c-1,0.39-2.15,0.59-3.46,0.59s-2.45-0.19-3.41-0.57c-0.97-0.38-1.78-0.92-2.42-1.64
+              c-1.32-1.44-1.97-3.45-1.97-6.04V126.13z"></path>
+            <path d="M169.17,126.13h1.99l11.18,13.7v-13.7h2.02v17.36h-1.9l-11.27-13.8v13.8h-2.02V126.13z"></path>
+            <path d="M192.25,126.13h7.12c2.66,0,4.79,0.74,6.41,2.23c1.67,1.54,2.51,3.59,2.51,6.17c0,2.72-0.86,4.9-2.57,6.53
+              c-1.69,1.62-3.92,2.43-6.69,2.43h-6.78V126.13z M199.34,141.42c2.04,0,3.64-0.61,4.82-1.84c1.16-1.21,1.74-2.85,1.74-4.92
+              c0-1.99-0.64-3.58-1.92-4.76c-1.25-1.15-2.9-1.73-4.95-1.73h-4.5v13.24H199.34z"></path>
+            <path d="M230.44,131.47c0,2.58-1.18,4.35-3.55,5.33l3.3,6.68h-2.64l-2.98-6.04c-0.81,0.12-1.66,0.18-2.54,0.18h-4.51
+              v5.86h-2.27v-17.36h7.12c2.57,0,4.48,0.35,5.75,1.05C229.67,128.03,230.44,129.46,230.44,131.47z M222.34,135.57
+              c1.83,0,3.19-0.25,4.07-0.76c1.09-0.63,1.63-1.69,1.63-3.19c0-1.94-1.26-3.05-3.78-3.31c-0.73-0.08-1.48-0.12-2.24-0.12h-4.5v7.38
+              H222.34z"></path>
+            <path d="M237.65,126.13h12.96v2.06h-10.69v4.68h9.52v2.06h-9.52v6.5h10.93v2.06h-13.2V126.13z"></path>
+            <path d="M257.83,126.13h7.12c2.66,0,4.79,0.74,6.41,2.23c1.67,1.54,2.51,3.59,2.51,6.17c0,2.72-0.86,4.9-2.57,6.53
+              c-1.69,1.62-3.92,2.43-6.69,2.43h-6.78V126.13z M264.92,141.42c2.04,0,3.64-0.61,4.82-1.84c1.16-1.21,1.74-2.85,1.74-4.92
+              c0-1.99-0.64-3.58-1.92-4.76c-1.25-1.15-2.9-1.73-4.95-1.73h-4.5v13.24H264.92z"></path>
+            <path d="M292.64,126.14h0.67l7.66,8.4l7.65-8.4h0.72l1.47,17.35h-2.22l-1.12-13.05l-6.49,7.18h-0.25l-6.29-7.07
+              l-0.98,12.95h-2.19L292.64,126.14z"></path>
+            <path d="M324.8,126.13h1.29l7.51,17.36h-2.48l-1.64-3.8h-8.69l-1.78,3.8h-2.33L324.8,126.13z M328.6,137.62
+              l-1.57-3.64c-0.2-0.46-0.39-0.93-0.58-1.42l-0.49-1.39c-0.31-0.9-0.49-1.51-0.55-1.84h-0.15c-0.07,0.33-0.21,0.79-0.44,1.4
+              l-0.62,1.59c-0.19,0.46-0.39,0.92-0.61,1.4l-1.83,3.9H328.6z"></path>
+            <path d="M339.56,126.13h2.27v17.36h-2.27V126.13z"></path>
+            <path d="M349.72,126.13h1.99l11.18,13.7v-13.7h2.02v17.36h-1.9l-11.27-13.8v13.8h-2.02V126.13z"></path>
+        </symbol>
+        <symbol id="calendar" viewBox="0 0 448 512">
+            <path
+                d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z" />
+        </symbol>
+    </svg>
+</div>
+<script>
+    var nav = document.querySelector('.test-header');
+    nav.innerHTML = "";
+    nav.classList.remove('cus');
+    document.addEventListener("scroll", () => {
+        var bodyScroll = window.scrollY,
+            navbar = document.querySelector('.navbar.change'),
+            logo = document.querySelector('.navbar.change .logo'),
+            floorplan = document.getElementById('floorplan-gallery');
+
+        if (bodyScroll > 300) {
+            navbar.classList.add("nav-scroll");
+            if (!floorplan) {
+                logo.classList.remove('wht');
+                logo.classList.add('blk');
+            } else {
+                logo.classList.remove('wht');
+                logo.classList.add('blk');
+            }
+        } else {
+            navbar.classList.remove("nav-scroll");
+            if (!floorplan) {
+                logo.classList.remove('blk');
+                logo.classList.add('wht');
+            } else {
+                logo.classList.remove('wht');
+                logo.classList.add('blk');
+            }
+        }
+    })
+</script>
+
+<!-- Body Content -->
+<style>
+    #floorplan-gallery p {
+        font-size: 15px !important;
+        font-weight: 400;
+        line-height: 2;
+        margin: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        #floorplan-gallery .row4 .p7 .row3 .right-vertical {
+            right: -60px !important;
+        }
+    }
+</style>
+<section id="floorplan-gallery" class="mt-3 mt-lg-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="row1">
+                    <div class="right-vertical">
+                        <p>Two Bedrooms</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DATABASE DATA -->
+        <div class="row">
+            <div class="col-md-5 col-12">
+                <div class="apt-info">
+
+                    <div class="child-tab f" style="display:block;">
+                        <h6 id="title">Unit Type C</h6>
+                        <p>2 Bedrooms<br>
+                            1041 SQ FT<br>
+                            <span class="text-uppercase">with Balcony</span>
+                        </p>
+                        <a href="/floorplans/c" class="apply d-none d-md-block popup">Availability</a>
+                    </div>
+                    <div class="mobile d-md-none position-relative">
+                        <div class="p2 wow fadeInUp" data-wow-delay=".3s"
+                            style="background-image: url('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/174264/UNIT C_PIC 2.png');">
+                        </div>
+                        <a class="popup-floorplan wow fadeInRight" data-wow-delay=".3s"
+                            style="background-image: url('https://artiswebcdn.azureedge.net/cms-strapi/assets/iconfloorplan_c_19b23a45d3.svg');">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 d-none d-md-block">
+                <div class="p1 wow fadeInDown" data-wow-delay=".3s"
+                    style="background-image: url('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/174264/UNIT C_PIC 2.png');">
+                </div>
+
+                <div class="p2 wow fadeInUp" data-wow-delay=".3s"
+                    style="background-image: url('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/174264/Unit C (4).jpg');">
+                </div>
+            </div>
+
+            <a href="/floorplans/c" class="apply d-md-none" data-lity="">Availability</a>
+        </div>
+
+        <!--  -->
+
+        <div class="row">
+            <!-- <div class="row2">
+          <div class="d-md-none">
+            <div class="child-tab f">
+              <p class="wow fadeInUp" data-wow-delay=".3s">Starting at<br>
+                <span class="price wow fadeInUp" data-wow-delay=".6s">$2064</span>
+              </p>
+            </div>
+          </div>
+        </div> -->
+            <div class="col-md-9 col-lg-10">
+                <div class="p3 wow fadeInLeft" data-wow-delay=".3s">
+                    <!-- Add onchange event  -->
+                    <div class="mx-3 mx-md-0">
+                        <h6>The View</h6>
+                        <div class="tour-dropdown mb-3 mb-lg-5">
+                            <select id="tours" onchange="showTours(event)">
+                                <!-- <option value="toplv" selected="">Top Level</option> -->
+                                <!-- <option value="midlv">Mid Level</option> -->
+                                <option value="botlv">Bot Level</option>
+                            </select>
+                        </div>
+                    </div>
+                    <iframe id="matterport" width="853" height="480" src="https://my.matterport.com/show/?m=iYU8GV7xvNC"
+                        frameborder="0" allowfullscreen="" allow="xr-spatial-tracking" target="_blank"></iframe>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2">
+                <div class="row2">
+                    <div class="right-vertical">
+                        <p>300 Main</p>
+                    </div>
+
+                    <div class="d-none d-md-block">
+                        <div class="child-tab f">
+                            <a class="popup-floorplan wow fadeInRight" data-wow-delay=".3s"
+                                style="background-image: url('https://artiswebcdn.azureedge.net/cms-strapi/assets/iconfloorplan_c_19b23a45d3.svg');">
+                                <div id="unit-type" hidden="">
+                                    <img src="https://cdngeneralcf.rentcafe.com/dmslivecafe/2/174264/2bedroom_1041.png"
+                                        alt="unit type B">
+                                </div>
+                            </a>
+                            <!-- <p class="wow fadeInUp" data-wow-delay=".3s">Starting at<br>
+                  <span class="price wow fadeInUp" data-wow-delay=".6s">$2064</span>
+                </p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="p4 wow fadeInRight" data-wow-delay=".6s"
+                    style="background-image: url('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/174264/Unit C (3).jpg'); background-position: center;">
+                </div>
+
+                <div class="row3">
+                    <div class="right-vertical">
+                        <p>Two Bedrooms</p>
+                    </div>
+                </div>
+
+                <div class="d-none d-md-block">
+                    <div class="background-content wow fadeInUp" data-wow-delay=".3s">
+                        <p class="wow fadeInUp" data-wow-delay=".6s">The apartment's elegant design is highlighted by a
+                            generous infusion of natural light that flows in from a wall of floor to ceiling windows.
+                        </p>
+                    </div>
+                    <div class="p5 wow fadeInDown" data-wow-delay=".3s"
+                        style="background-image: url('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/174264/Unit C (8).jpg'); background-position: 60%;">
+                    </div>
+
+                    <div id="float-text">
+                        <p class="wow fadeInUp" data-wow-delay=".6s">
+                            Your new apartment offers 1041 sq ft of space to enjoy. With central heating, air
+                            conditioning and
+                            in-suite laundry, it's designed for comfort and convenience so you can live life to its
+                            fullest!
+                        </p>
+                    </div>
+                    <div class="p6 wow fadeInRight" data-wow-delay=".3s"
+                        style="background-image: url('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/174264/Unit C (9).jpg');">
+                    </div>
+                </div>
+
+                <div class="mobile d-md-none">
+                    <div class="background-content wow fadeInUp" data-wow-delay=".3s">
+                        <p class="wow fadeInUp" data-wow-delay=".6s">The apartment's elegant design is highlighted by a
+                            generous infusion of natural light that flows in from a wall of floor to ceiling windows.
+                        </p>
+                    </div>
+                    <div class="p5 wow fadeInDown" data-wow-delay=".3s"
+                        style="background-image: url('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/174264/Unit C (8).jpg'); background-position: 60%;">
+                    </div>
+
+                    <div class="p6 wow fadeInRight" data-wow-delay=".3s"
+                        style="background-image: url('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/174264/Unit C (9).jpg');">
+                    </div>
+                    <div class="d-md-none" id="float-text">
+                        <p class="wow fadeInUp" data-wow-delay=".6s">
+                            Your new apartment offers 1041 sq ft of space to enjoy. With central heating, air
+                            conditioning and
+                            in-suite laundry, it's designed for comfort and convenience so you can live life to its
+                            fullest!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row4">
+        <div class="p7"
+            style="background-image: url('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/174264/UNIT C_PIC 3.png');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row2">
+                            <div class="right-vertical">
+                                <p>300 Main</p>
+                            </div>
+                        </div>
+                        <div class="row3">
+                            <div class="right-vertical">
+                                <p>Two Bedrooms</p>
+                            </div>
+                        </div>
+                        <div class="middle-box">
+                            <div class="p8 wow fadeInLeft" data-wow-delay=".3s"
+                                style="background-image: url('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/174264/UNIT C_PIC 4.png');">
+                            </div>
+                            <p class="wow fadeInRight" data-wow-delay=".6s">Whether it's enjoying a fresh cup of coffee
+                                in the morning or hosting a formal dinner party, 300 Main has you covered.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="p9 wow fadeInLeft" data-wow-delay=".6s"
+                        style="background-image: url('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/174264/UNIT C_PIC 5.png');">
+                    </div>
+                    <div class="p10 wow fadeInRight" data-wow-delay=".6s"
+                        style="background-image: url('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/174264/Gal 10.jpg');">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p11"
+        style="background-image: url('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/174264/Gal 11.jpg');">
+    </div>
+
+</section>
+<script>
+    function showTours(event) {
+        var level = event.target.value;
+        var matterport = document.querySelector('#matterport');
+        switch (level) {
+            case "toplv":
+                //matterport.setAttribute("src", "https://my.matterport.com/show/?m=eBdGkDv2Gib");
+                break;
+            case "midlv":
+                //matterport.setAttribute("src", "https://my.matterport.com/show/?m=cZ9iwDEKQLn");
+                break;
+            case "botlv":
+                matterport.setAttribute("src", "https://my.matterport.com/show/?m=iYU8GV7xvNC");
+                break;
+            default:
+                return false;
+        }
+    }
+</script>
